@@ -27,25 +27,31 @@ const Skills = () => {
     {
       icon: Code,
       title: 'Frontend',
-      skills: ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'React', 'Vue.js', 'Tailwind CSS'],
+      skills: ['NextJS', 'NuxtJS', 'JavaScript', 'TypeScript', 'React', 'Vue.js', 'Tailwind CSS'],
       color: 'from-blue-400 to-cyan-400'
     },
     {
       icon: Database,
       title: 'Backend',
-      skills: ['Node.js', 'Express', 'Python', 'Django', 'REST APIs', 'GraphQL'],
+      skills: ['Node.js', 'Express', 'Python', 'Django', 'REST APIs', 'GraphQL', 'NestJS'],
       color: 'from-green-400 to-emerald-400'
     },
     {
       icon: Globe,
       title: 'Database',
-      skills: ['MongoDB', 'PostgreSQL', 'MySQL', 'Redis', 'Firebase'],
+      skills: ['MongoDB', 'PostgreSQL', 'MySQL', 'Redis', 'Firebase', 'BigCommerce', 'Strapi'],
       color: 'from-purple-400 to-pink-400'
     },
     {
       icon: Settings,
       title: 'Tools & DevOps',
-      skills: ['Git', 'Docker', 'AWS', 'CI/CD', 'Jest', 'Webpack'],
+      skills: ['Git', 'Docker', 'AWS', 'CI/CD', 'Jest', 'Webpack', 'Figma'],
+      color: 'from-orange-400 to-red-400'
+    },
+    {
+      icon: Code,
+      title: 'CMS & eCommerce',
+      skills: ['WordPress', 'Shopify', 'Magento', 'Wix', 'Webflow', 'Squarespace'],
       color: 'from-orange-400 to-red-400'
     }
   ];
@@ -54,14 +60,12 @@ const Skills = () => {
     <section id="skills" ref={sectionRef} className="py-20 bg-card/30">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className={`text-4xl md:text-5xl font-bold font-display mb-6 transition-all duration-1000 ${
-            isVisible ? 'animate-fade-in' : 'opacity-0 translate-y-[30px]'
-          }`}>
+          <h2 className={`text-4xl md:text-5xl font-bold font-display mb-6 transition-all duration-1000 ${isVisible ? 'animate-fade-in' : 'opacity-0 translate-y-[30px]'
+            }`}>
             My <span className="gradient-text">Skills</span>
           </h2>
-          <p className={`text-xl text-muted-foreground max-w-2xl mx-auto transition-all duration-1000 delay-300 ${
-            isVisible ? 'animate-fade-in' : 'opacity-0 translate-y-[30px]'
-          }`}>
+          <p className={`text-xl text-muted-foreground max-w-2xl mx-auto transition-all duration-1000 delay-300 ${isVisible ? 'animate-fade-in' : 'opacity-0 translate-y-[30px]'
+            }`}>
             Technologies and tools I use to bring ideas to life
           </p>
         </div>
@@ -70,21 +74,20 @@ const Skills = () => {
           {skillCategories.map((category, index) => (
             <div
               key={category.title}
-              className={`glass rounded-2xl p-6 hover-glow transition-all duration-1000 ${
-                isVisible 
-                  ? 'animate-fade-in' 
-                  : 'opacity-0 translate-y-[30px]'
-              }`}
+              className={`glass rounded-2xl p-6 hover-glow transition-all duration-1000 ${isVisible
+                ? 'animate-fade-in'
+                : 'opacity-0 translate-y-[30px]'
+                }`}
               style={{ animationDelay: `${index * 200}ms` }}
             >
               <div className={`w-16 h-16 rounded-full bg-gradient-to-r ${category.color} p-3 mb-4 mx-auto`}>
                 <category.icon className="w-full h-full text-white" />
               </div>
-              
+
               <h3 className="text-xl font-semibold text-center mb-4 text-foreground">
                 {category.title}
               </h3>
-              
+
               <div className="space-y-2">
                 {category.skills.map((skill, skillIndex) => (
                   <div
