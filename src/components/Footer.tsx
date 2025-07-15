@@ -24,7 +24,7 @@ const Footer = () => {
           {/* Social Links */}
           <div className="flex space-x-6">
             <a
-              href="https://github.com"
+              href="https://github.com/akashsinghtkd"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full glass hover-glow transition-all duration-300"
@@ -32,7 +32,7 @@ const Footer = () => {
               <Github className="h-6 w-6" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/akash-singh-37878a146/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full glass hover-glow transition-all duration-300"
@@ -40,7 +40,7 @@ const Footer = () => {
               <Linkedin className="h-6 w-6" />
             </a>
             <a
-              href="mailto:alex@example.com"
+              href="mailto:akashonlineweb@gmail.com"
               className="p-3 rounded-full glass hover-glow transition-all duration-300"
             >
               <Mail className="h-6 w-6" />
@@ -50,7 +50,7 @@ const Footer = () => {
           {/* Copyright */}
           <div className="text-center text-muted-foreground">
             <p className="flex items-center justify-center space-x-2">
-              <span>© 2024 Alex Morgan. Made with</span>
+              <span>© 2024 Akash Singh. Made with</span>
               <Heart className="h-4 w-4 text-red-500 animate-pulse" />
               <span>and lots of coffee</span>
             </p>

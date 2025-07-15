@@ -55,19 +55,19 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'alex@example.com',
-      href: 'mailto:alex@example.com'
+      value: 'akashonlineweb@gmail.com',
+      href: 'mailto:akashonlineweb@gmail.com'
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+1 (555) 123-4567',
+      value: '+91 9005893137',
       href: 'tel:+15551234567'
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Lucknow, UP, india',
       href: '#'
     }
   ];
@@ -76,27 +76,24 @@ const Contact = () => {
     <section id="contact" ref={sectionRef} className="py-20 bg-card/30">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className={`text-4xl md:text-5xl font-bold font-display mb-6 transition-all duration-1000 ${
-            isVisible ? 'animate-fade-in' : 'opacity-0 translate-y-[30px]'
-          }`}>
+          <h2 className={`text-4xl md:text-5xl font-bold font-display mb-6 transition-all duration-1000 ${isVisible ? 'animate-fade-in' : 'opacity-0 translate-y-[30px]'
+            }`}>
             Get In <span className="gradient-text">Touch</span>
           </h2>
-          <p className={`text-xl text-muted-foreground max-w-2xl mx-auto transition-all duration-1000 delay-300 ${
-            isVisible ? 'animate-fade-in' : 'opacity-0 translate-y-[30px]'
-          }`}>
+          <p className={`text-xl text-muted-foreground max-w-2xl mx-auto transition-all duration-1000 delay-300 ${isVisible ? 'animate-fade-in' : 'opacity-0 translate-y-[30px]'
+            }`}>
             Let's discuss your next project or just say hello
           </p>
         </div>
 
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12">
           {/* Contact Info */}
-          <div className={`transition-all duration-1000 delay-500 ${
-            isVisible ? 'animate-slide-in-left' : 'opacity-0 translate-x-[-50px]'
-          }`}>
+          <div className={`transition-all duration-1000 delay-500 ${isVisible ? 'animate-slide-in-left' : 'opacity-0 translate-x-[-50px]'
+            }`}>
             <h3 className="text-2xl font-semibold mb-8 text-foreground">
               Let's start a conversation
             </h3>
-            
+
             <div className="space-y-6 mb-8">
               {contactInfo.map((info) => (
                 <a
@@ -117,17 +114,16 @@ const Contact = () => {
 
             <div className="prose prose-invert">
               <p className="text-muted-foreground leading-relaxed">
-                I'm always interested in hearing about new opportunities, 
-                creative projects, or just having a chat about technology 
+                I'm always interested in hearing about new opportunities,
+                creative projects, or just having a chat about technology
                 and development. Don't hesitate to reach out!
               </p>
             </div>
           </div>
 
           {/* Contact Form */}
-          <div className={`transition-all duration-1000 delay-700 ${
-            isVisible ? 'animate-slide-in-right' : 'opacity-0 translate-x-[50px]'
-          }`}>
+          <div className={`transition-all duration-1000 delay-700 ${isVisible ? 'animate-slide-in-right' : 'opacity-0 translate-x-[50px]'
+            }`}>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="space-y-2">
@@ -160,7 +156,7 @@ const Contact = () => {
                   />
                 </div>
               </div>
-              
+
               <div className="space-y-2">
                 <label htmlFor="subject" className="text-sm font-medium text-foreground">
                   Subject
@@ -175,7 +171,7 @@ const Contact = () => {
                   required
                 />
               </div>
-              
+
               <div className="space-y-2">
                 <label htmlFor="message" className="text-sm font-medium text-foreground">
                   Message
@@ -190,7 +186,7 @@ const Contact = () => {
                   required
                 />
               </div>
-              
+
               <Button
                 type="submit"
                 size="lg"

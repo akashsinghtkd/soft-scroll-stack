@@ -14,25 +14,25 @@ const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <ParticleBackground />
-      
+
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10" />
-      
+
       <div className="container mx-auto px-6 text-center z-10">
         <div className="max-w-4xl mx-auto">
           {/* Main heading */}
           <h1 className="text-5xl md:text-7xl font-bold font-display mb-6 animate-fade-in">
             Hi, I'm{' '}
-            <span className="gradient-text">Alex Morgan</span>
+            <span className="gradient-text">Akash Singh</span>
             , a Creative{' '}
             <span className="gradient-text">Full Stack Developer</span>
           </h1>
-          
+
           {/* Subheading */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 animate-slide-in-left animation-delay-300">
             I build robust web apps with clean code and intuitive UX
           </p>
-          
+
           {/* CTA Button */}
           <div className="mb-12 animate-slide-in-right animation-delay-600">
             <Button
@@ -44,11 +44,11 @@ const Hero = () => {
               <ArrowDown className="ml-2 h-5 w-5 group-hover:translate-y-1 transition-transform" />
             </Button>
           </div>
-          
+
           {/* Social Links */}
           <div className="flex justify-center space-x-6 animate-fade-in animation-delay-900">
             <a
-              href="https://github.com"
+              href="https://github.com/akashsinghtkd"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full glass hover-glow transition-all duration-300"
@@ -56,7 +56,7 @@ const Hero = () => {
               <Github className="h-6 w-6" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/akash-singh-37878a146/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full glass hover-glow transition-all duration-300"
@@ -64,7 +64,7 @@ const Hero = () => {
               <Linkedin className="h-6 w-6" />
             </a>
             <a
-              href="mailto:alex@example.com"
+              href="mailto:akashonlineweb@gmail.com"
               className="p-3 rounded-full glass hover-glow transition-all duration-300"
             >
               <Mail className="h-6 w-6" />
@@ -72,7 +72,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      
+
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <ArrowDown className="h-6 w-6 text-muted-foreground" />

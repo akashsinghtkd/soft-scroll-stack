@@ -31,7 +31,7 @@ const Projects = () => {
       image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop',
       tech: ['React', 'Node.js', 'MongoDB', 'Stripe'],
       liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com'
+      githubUrl: 'https://github.com/akashsinghtkd'
     },
     {
       title: 'Task Management App',
@@ -39,7 +39,7 @@ const Projects = () => {
       image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop',
       tech: ['Vue.js', 'Express', 'Socket.io', 'PostgreSQL'],
       liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com'
+      githubUrl: 'https://github.com/akashsinghtkd'
     },
     {
       title: 'Weather Dashboard',
@@ -47,7 +47,7 @@ const Projects = () => {
       image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&h=300&fit=crop',
       tech: ['React', 'Chart.js', 'OpenWeather API', 'Tailwind'],
       liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com'
+      githubUrl: 'https://github.com/akashsinghtkd'
     },
     {
       title: 'Social Media Dashboard',
@@ -55,7 +55,7 @@ const Projects = () => {
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop',
       tech: ['React', 'D3.js', 'Node.js', 'MongoDB'],
       liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com'
+      githubUrl: 'https://github.com/akashsinghtkd'
     }
   ];
 
@@ -63,14 +63,12 @@ const Projects = () => {
     <section id="projects" ref={sectionRef} className="py-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className={`text-4xl md:text-5xl font-bold font-display mb-6 transition-all duration-1000 ${
-            isVisible ? 'animate-fade-in' : 'opacity-0 translate-y-[30px]'
-          }`}>
+          <h2 className={`text-4xl md:text-5xl font-bold font-display mb-6 transition-all duration-1000 ${isVisible ? 'animate-fade-in' : 'opacity-0 translate-y-[30px]'
+            }`}>
             Featured <span className="gradient-text">Projects</span>
           </h2>
-          <p className={`text-xl text-muted-foreground max-w-2xl mx-auto transition-all duration-1000 delay-300 ${
-            isVisible ? 'animate-fade-in' : 'opacity-0 translate-y-[30px]'
-          }`}>
+          <p className={`text-xl text-muted-foreground max-w-2xl mx-auto transition-all duration-1000 delay-300 ${isVisible ? 'animate-fade-in' : 'opacity-0 translate-y-[30px]'
+            }`}>
             Some of my recent work that showcases my skills and creativity
           </p>
         </div>
@@ -79,11 +77,10 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={project.title}
-              className={`glass rounded-2xl overflow-hidden hover-glow group transition-all duration-1000 ${
-                isVisible 
-                  ? 'animate-fade-in' 
-                  : 'opacity-0 translate-y-[30px]'
-              }`}
+              className={`glass rounded-2xl overflow-hidden hover-glow group transition-all duration-1000 ${isVisible
+                ? 'animate-fade-in'
+                : 'opacity-0 translate-y-[30px]'
+                }`}
               style={{ animationDelay: `${index * 200}ms` }}
             >
               <div className="relative overflow-hidden">
@@ -94,16 +91,16 @@ const Projects = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
-              
+
               <div className="p-6">
                 <h3 className="text-2xl font-semibold mb-3 text-foreground">
                   {project.title}
                 </h3>
-                
+
                 <p className="text-muted-foreground mb-4 leading-relaxed">
                   {project.description}
                 </p>
-                
+
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tech.map((tech) => (
                     <span
@@ -114,7 +111,7 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-                
+
                 <div className="flex space-x-4">
                   <Button
                     variant="outline"
@@ -127,7 +124,7 @@ const Projects = () => {
                       <span>Live Demo</span>
                     </a>
                   </Button>
-                  
+
                   <Button
                     variant="outline"
                     size="sm"
